@@ -3,149 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy 3rd Month Anniversary to both of us ❤️</title>
+  <title>Happy 3rd Month Anniversary</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
       font-family: 'Georgia', serif;
-      background: linear-gradient(to bottom right, #ffe6e6, #fff0f5);
-      color: #333;
+      background-color: #ffe6eb;
+      color: #4b2e2e;
       text-align: center;
-      padding: 50px 20px;
+      padding: 20px;
     }
     h1 {
-      font-size: 2.5em;
-      color: #d6336c;
-      margin-bottom: 20px;
-    }
-    p {
-      max-width: 800px;
-      margin: 0 auto 20px;
-      font-size: 1.2em;
-      line-height: 1.6;
-      background-color: rgba(255, 255, 255, 0.7);
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    .signature {
-      margin-top: 40px;
-      font-weight: bold;
-      font-size: 1.3em;
-      color: #d6336c;
+      font-size: 36px;
+      margin-bottom: 40px;
+      animation: fadein 3s;
     }
     .gallery {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 40px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
-    .gallery img {
-      width: 200px;
-      height: auto;
+    .gallery-item {
+      background-color: #ffe6eb;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      max-width: 90%;
+    }
+    .gallery-item img {
+      width: 100%;
       border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
     }
-    .gallery img:hover {
-      transform: scale(1.1);
+    .gallery-item p {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
     }
-    .music-btn {
-      background-color: #d6336c;
-      color: white;
-      font-size: 1em;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      margin: 30px 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.2s;
+    audio {
+      margin-top: 20px;
     }
-    .music-btn:hover {
-      transform: scale(1.1);
+    @keyframes fadein {
+      from {opacity: 0;}
+      to {opacity: 1;}
     }
   </style>
 </head>
 <body>
-  <h1>Happy 3rd Month Anniversary to Both of Us ❤️</h1>
+  <h1>Happy 3rd Month Anniversary ❤️</h1>
 
-  <audio id="bgMusic">
+  <audio controls autoplay loop>
     <source src="song.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
-  <button onclick="toggleMusic()" class="music-btn">▶ Play / Pause Music</button>
-
-  <p>
-    My love,<br><br>
-    Three moons have passed since our hearts first intertwined,<br>
-    Three chapters written in this story of you and I.<br>
-    Each sunrise paints your name upon my soul,<br>
-    Each nightfall wraps me in the warmth of your love.<br><br>
-
-    In your eyes, I’ve found the spark of every dream,<br>
-    In your words, the melody that calms my restless mind.<br>
-    You’ve turned ordinary days into precious memories,<br>
-    Moments with you feel like eternity wrapped in seconds.<br><br>
-
-    Your laughter dances in my thoughts like morning light,<br>
-    Your smile lingers like the sweetest song on my lips.<br>
-    Every message, every call, every heartbeat shared—<br>
-    They’ve stitched a tapestry of love that grows ever stronger.<br><br>
-
-    Three months may seem brief to the world outside,<br>
-    But to me, they hold a lifetime of reasons to love you.<br>
-    I promise, my dearest, to hold your heart with gentle hands,<br>
-    To cherish you fiercely, in calm and storm alike.<br><br>
-
-    As we celebrate this day, know this with all your heart—<br>
-    You are my muse, my miracle, my endless forever.<br>
-    Happy 3rd Month Anniversary, my love.<br>
-    I adore you more deeply than words can ever tell.
-  </p>
-
-  <div class="signature">Forever yours,<br>By your hubby Jo (in short JJ)</div>
-
-  <h2>Our Beautiful Memories 📸</h2>
   <div class="gallery">
-    <img src="photo1.png" alt="Memory 1">
-    <img src="photo2.png" alt="Memory 2">
-    <img src="photo3.png" alt="Memory 3">
-    <img src="photo4.png" alt="Memory 4">
-    <img src="photo5.png" alt="Memory 5">
-    <img src="photo6.png" alt="Memory 6">
-    <img src="photo7.png" alt="Memory 7">
-    <img src="photo8.png" alt="Memory 8">
-    <img src="photo9.png" alt="Memory 9">
-    <img src="photo10.png" alt="Memory 10">
-    <img src="photo11.png" alt="Memory 11">
-    <img src="photo12.png" alt="Memory 12">
-    <img src="photo13.png" alt="Memory 13">
-    <img src="photo14.png" alt="Memory 14">
-    <img src="photo15.png" alt="Memory 15">
-    <img src="photo16.png" alt="Memory 16">
-    <img src="photo17.png" alt="Memory 17">
-    <img src="photo18.png" alt="Memory 18">
-    <img src="photo19.png" alt="Memory 19">
-    <img src="photo20.png" alt="Memory 20">
-    <img src="photo21.png" alt="Memory 21">
-    <img src="photo22.png" alt="Memory 22">
-    <img src="photo23.png" alt="Memory 23">
-    <img src="photo24.png" alt="Memory 24">
+    <div class="gallery-item"><img src="photo1.png" alt="Memory 1"><p>Memory 1</p></div>
+    <div class="gallery-item"><img src="photo10.png" alt="Memory 10"><p>Memory 10</p></div>
+    <div class="gallery-item"><img src="photo11.png" alt="Memory 11"><p>Memory 11</p></div>
+    <div class="gallery-item"><img src="photo12.png" alt="Memory 12"><p>Memory 12</p></div>
+    <div class="gallery-item"><img src="photo13.png" alt="Memory 13"><p>Memory 13</p></div>
+    <div class="gallery-item"><img src="photo14.png" alt="Memory 14"><p>Memory 14</p></div>
+    <div class="gallery-item"><img src="photo15.png" alt="Memory 15"><p>Memory 15</p></div>
+    <div class="gallery-item"><img src="photo16.png" alt="Memory 16"><p>Memory 16</p></div>
+    <div class="gallery-item"><img src="photo17.png" alt="Memory 17"><p>Memory 17</p></div>
+    <div class="gallery-item"><img src="photo18.png" alt="Memory 18"><p>Memory 18</p></div>
+    <div class="gallery-item"><img src="photo19.png" alt="Memory 19"><p>Memory 19</p></div>
+    <div class="gallery-item"><img src="photo2.png" alt="Memory 2"><p>Memory 2</p></div>
+    <div class="gallery-item"><img src="photo20.png" alt="Memory 20"><p>Memory 20</p></div>
+    <div class="gallery-item"><img src="photo21.png" alt="Memory 21"><p>Memory 21</p></div>
+    <div class="gallery-item"><img src="photo22.png" alt="Memory 22"><p>Memory 22</p></div>
+    <div class="gallery-item"><img src="photo23.png" alt="Memory 23"><p>Memory 23</p></div>
+    <div class="gallery-item"><img src="photo24.png" alt="Memory 24"><p>Memory 24</p></div>
+    <div class="gallery-item"><img src="photo3.png" alt="Memory 3"><p>Memory 3</p></div>
+    <div class="gallery-item"><img src="photo4.png" alt="Memory 4"><p>Memory 4</p></div>
+    <div class="gallery-item"><img src="photo5.png" alt="Memory 5"><p>Memory 5</p></div>
+    <div class="gallery-item"><img src="photo6.png" alt="Memory 6"><p>Memory 6</p></div>
+    <div class="gallery-item"><img src="photo7.png" alt="Memory 7"><p>Memory 7</p></div>
+    <div class="gallery-item"><img src="photo8.png" alt="Memory 8"><p>Memory 8</p></div>
+    <div class="gallery-item"><img src="photo9.png" alt="Memory 9"><p>Memory 9</p></div>
   </div>
-
-  <script>
-    const music = document.getElementById('bgMusic');
-    function toggleMusic() {
-      if (music.paused) {
-        music.play();
-      } else {
-        music.pause();
-      }
-    }
-  </script>
 </body>
 </html>
