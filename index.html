@@ -1,86 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy 3rd Month Anniversary</title>
-  <style>
-    body {
-      font-family: 'Georgia', serif;
-      background-color: #ffe6eb;
-      color: #4b2e2e;
-      text-align: center;
-      padding: 20px;
-    }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 40px;
-      animation: fadein 3s;
-    }
-    .gallery {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-    .gallery-item {
-      background-color: #ffe6eb;
-      padding: 10px;
-      border-radius: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-      max-width: 90%;
-    }
-    .gallery-item img {
-      width: 100%;
-      border-radius: 15px;
-    }
-    .gallery-item p {
-      margin-top: 10px;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    audio {
-      margin-top: 20px;
-    }
-    @keyframes fadein {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy 3rd Month Anniversary</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #ffe6eb;
+      color: #4b2e2e;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      animation: fadein 3s;
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 30px auto;
+    }
+    video {
+      max-width: 90%;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    audio {
+      margin-top: 20px;
+    }
+    @keyframes fadein {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
 </head>
 <body>
-  <h1>Happy 3rd Month Anniversary ❤️</h1>
+  <h1>Happy 3rd Month Anniversary ❤️</h1>
 
-  <audio controls autoplay loop>
-    <source src="song.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <audio controls autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-  <div class="gallery">
-    <div class="gallery-item"><img src="photo1.png" alt="Memory 1"><p>Memory 1</p></div>
-    <div class="gallery-item"><img src="photo10.png" alt="Memory 10"><p>Memory 10</p></div>
-    <div class="gallery-item"><img src="photo11.png" alt="Memory 11"><p>Memory 11</p></div>
-    <div class="gallery-item"><img src="photo12.png" alt="Memory 12"><p>Memory 12</p></div>
-    <div class="gallery-item"><img src="photo13.png" alt="Memory 13"><p>Memory 13</p></div>
-    <div class="gallery-item"><img src="photo14.png" alt="Memory 14"><p>Memory 14</p></div>
-    <div class="gallery-item"><img src="photo15.png" alt="Memory 15"><p>Memory 15</p></div>
-    <div class="gallery-item"><img src="photo16.png" alt="Memory 16"><p>Memory 16</p></div>
-    <div class="gallery-item"><img src="photo17.png" alt="Memory 17"><p>Memory 17</p></div>
-    <div class="gallery-item"><img src="photo18.png" alt="Memory 18"><p>Memory 18</p></div>
-    <div class="gallery-item"><img src="photo19.png" alt="Memory 19"><p>Memory 19</p></div>
-    <div class="gallery-item"><img src="photo2.png" alt="Memory 2"><p>Memory 2</p></div>
-    <div class="gallery-item"><img src="photo20.png" alt="Memory 20"><p>Memory 20</p></div>
-    <div class="gallery-item"><img src="photo21.png" alt="Memory 21"><p>Memory 21</p></div>
-    <div class="gallery-item"><img src="photo22.png" alt="Memory 22"><p>Memory 22</p></div>
-    <div class="gallery-item"><img src="photo23.png" alt="Memory 23"><p>Memory 23</p></div>
-    <div class="gallery-item"><img src="photo24.png" alt="Memory 24"><p>Memory 24</p></div>
-    <div class="gallery-item"><img src="photo3.png" alt="Memory 3"><p>Memory 3</p></div>
-    <div class="gallery-item"><img src="photo4.png" alt="Memory 4"><p>Memory 4</p></div>
-    <div class="gallery-item"><img src="photo5.png" alt="Memory 5"><p>Memory 5</p></div>
-    <div class="gallery-item"><img src="photo6.png" alt="Memory 6"><p>Memory 6</p></div>
-    <div class="gallery-item"><img src="photo7.png" alt="Memory 7"><p>Memory 7</p></div>
-    <div class="gallery-item"><img src="photo8.png" alt="Memory 8"><p>Memory 8</p></div>
-    <div class="gallery-item"><img src="photo9.png" alt="Memory 9"><p>Memory 9</p></div>
-  </div>
+  <div class="video-container">
+    <video controls autoplay>
+      <source src="anniversary.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 </body>
 </html>
