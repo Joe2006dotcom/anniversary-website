@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy 3rd Month Anniversary ❤️</title>
+  <title>Happy 3rd Month Anniversary to both of us ❤️</title>
   <style>
     body {
       margin: 0;
@@ -17,7 +17,7 @@
     h1 {
       font-size: 2.5em;
       color: #d6336c;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     p {
       max-width: 800px;
@@ -52,10 +52,32 @@
     .gallery img:hover {
       transform: scale(1.1);
     }
+    .music-btn {
+      background-color: #d6336c;
+      color: white;
+      font-size: 1em;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 30px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .music-btn:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
   <h1>Happy 3rd Month Anniversary to Both of Us ❤️</h1>
+
+  <audio id="bgMusic">
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button onclick="toggleMusic()" class="music-btn">▶ Play / Pause Music</button>
 
   <p>
     My love,<br><br>
@@ -114,5 +136,16 @@
     <img src="photo23.png" alt="Memory 23">
     <img src="photo24.png" alt="Memory 24">
   </div>
+
+  <script>
+    const music = document.getElementById('bgMusic');
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
 </body>
 </html>
