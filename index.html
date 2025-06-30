@@ -71,15 +71,17 @@
   display: flex;
   justify-content: center;
   margin: 40px auto;
+  width: 100%;
 }
 
 video {
-  width: 90%;          /* You can adjust this percentage */
-  max-width: 480px;    /* Sets a maximum width for the video */
+  width: 90%;          /* Take almost the full width on mobile */
+  max-width: 600px;    /* But don't exceed 600px on large screens */
   height: auto;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+  
     
   </style>
 </head>
