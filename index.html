@@ -135,28 +135,30 @@
     </video>
   </div>
 
-  <script>
-    const music = document.getElementById('bgMusic');
-    function toggleMusic() {
-      if (music.paused) {
-        music.play();
-      } else {
-        music.pause();
-      }
+ <script>
+  const music = document.getElementById('bgMusic');
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
     }
+  }
 
-    // Countdown logic
-    let count = 3;
-    const countdownEl = document.getElementById('countdown');
-    const countdownInterval = setInterval(() => {
-      count--;
-      if (count > 0) {
-        countdownEl.textContent = count;
-      } else {
-        clearInterval(countdownInterval);
-        countdownEl.style.display = 'none';  // Hide countdown overlay
-      }
-    }, 1000);
-  </script>
+  // Countdown logic
+  let count = 3;
+  const countdownEl = document.getElementById('countdown');
+  countdownEl.textContent = count;
+  const countdownInterval = setInterval(() => {
+    count--;
+    if (count > 0) {
+      countdownEl.textContent = count;
+    } else {
+      clearInterval(countdownInterval);
+      countdownEl.style.display = 'none';  // Hide countdown overlay
+    }
+  }, 1000);
+</script>
+
 </body>
 </html>
