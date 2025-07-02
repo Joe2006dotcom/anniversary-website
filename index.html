@@ -35,23 +35,6 @@
       font-size: 1.3em;
       color: #d6336c;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 40px;
-    }
-    .gallery img {
-      width: 200px;
-      height: auto;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.1);
-    }
     .music-btn {
       background-color: #d6336c;
       color: white;
@@ -68,24 +51,42 @@
       transform: scale(1.1);
     }
     .video-container {
-  display: flex;
-  justify-content: center;
-  margin: 40px auto;
-  width: 100%;
-}
-
-video {
-  width: 70%;          /* Take almost the full width on mobile */
-  max-width: 600px;    /* But don't exceed 600px on large screens */
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-  
-    
+      display: flex;
+      justify-content: center;
+      margin: 40px auto;
+      width: 100%;
+    }
+    video {
+      width: 70%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    #countdown {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom right, #ffe6e6, #fff0f5);
+      color: #d6336c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 5em;
+      z-index: 9999;
+      animation: fadeout 1s forwards;
+    }
+    @keyframes fadeout {
+      0% {opacity: 1;}
+      100% {opacity: 0;}
+    }
   </style>
 </head>
 <body>
+  <div id="countdown">3</div>
+
   <h1>Happy 3rd Month Anniversary to Both of Us ❤️</h1>
 
   <audio id="bgMusic">
@@ -125,7 +126,7 @@ video {
 
   <div class="signature">Forever yours,<br>By your hubby Jo (in short JJ)</div>
 
-   <h2>Our Beautiful Memories 📸</h2>
+  <h2>Our Beautiful Memories 📸</h2>
 
   <div class="video-container">
     <video controls autoplay>
@@ -143,6 +144,19 @@ video {
         music.pause();
       }
     }
+
+    // Countdown logic
+    let count = 3;
+    const countdownEl = document.getElementById('countdown');
+    const countdownInterval = setInterval(() => {
+      count--;
+      if (count > 0) {
+        countdownEl.textContent = count;
+      } else {
+        clearInterval(countdownInterval);
+        countdownEl.style.display = 'none';  // Hide countdown overlay
+      }
+    }, 1000);
   </script>
 </body>
 </html>
